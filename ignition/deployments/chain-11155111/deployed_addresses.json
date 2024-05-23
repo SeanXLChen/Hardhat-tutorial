@@ -1,3 +1,4 @@
 {
-  "CounterModule#Counter": "0xB5e7a76A88ee6DB9A637a2bFa580BC816a3B9c73"
+  "CounterModule#Counter": "0xB5e7a76A88ee6DB9A637a2bFa580BC816a3B9c73",
+  "FaucetModule#Faucet": "0xee58963E32cDF5e8CE38d3a3706e38afb92aD9C5"
 }
