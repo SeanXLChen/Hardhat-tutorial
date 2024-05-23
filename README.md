@@ -30,3 +30,5 @@ We recommend the following flow: Choose the current root > `YES` to the `.gitign
 7. Add `require(‘dotenv’).config()` at the top of your `hardhat.config.js` file
 8. Add `networks` flag to `hardhat.config.js`, add your Alchemy RPC URL under `url` and your testnet private key under `accounts`
 9. Set up your scripts and contracts, then deploy in a flash! ⚡️
+
+follow this [hardhat link](https://hardhat.org/hardhat-runner/docs/getting-started) to compile and test the sample contracts
