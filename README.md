@@ -32,3 +32,5 @@ We recommend the following flow: Choose the current root > `YES` to the `.gitign
 9. Set up your scripts and contracts, then deploy in a flash! ⚡️
 
 follow this [hardhat link](https://hardhat.org/hardhat-runner/docs/getting-started) to compile and test the sample contracts
+
+Contract.sol deployed to sepolia testnet at [here](https://sepolia.etherscan.io/address/0xB5e7a76A88ee6DB9A637a2bFa580BC816a3B9c73)
