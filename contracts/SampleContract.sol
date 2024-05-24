@@ -19,4 +19,10 @@ contract SampleContract {
     fallback() external {
         // do something
     }
+
+    // function to send ether to the owner
+    function tipOwner() external payable {
+        (bool success, ) = owner.call{ value: msg.value }("");
+        require(success);
+    }
 }
