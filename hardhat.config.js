@@ -13,5 +13,8 @@ module.exports = {
       url: process.env.ALCHEMY_MAINNET_URL,
       accounts: [process.env.SEAN_PRIVATE_KEY],
     },
+    localhost: {
+      url: "http://127.0.0.1:8545/"
+    }
   }
 };
