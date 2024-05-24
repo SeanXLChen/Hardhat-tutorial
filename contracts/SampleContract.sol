@@ -2,7 +2,7 @@
 pragma solidity ^0.8.24;
 
 // this contract will set the owner to the address that deploys it
-contract SetOwner {
+contract SampleContract {
     address public owner;
 
     constructor() {
@@ -14,4 +14,6 @@ contract SetOwner {
         // console.loa(msg.sender);
         // console.log(msg.value);
     }
+
+    //
 }
