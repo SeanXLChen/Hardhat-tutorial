@@ -15,5 +15,8 @@ contract SampleContract {
         // console.log(msg.value);
     }
 
-    //
+    // fallback function (if no function is called, this function will be called)
+    fallback() external {
+        // do something
+    }
 }
