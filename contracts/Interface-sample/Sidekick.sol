@@ -12,6 +12,8 @@ contract Sidekick {
         IHero(heroAddress).alert(); // Call the alert function of the Hero contract
     }
 
+
+    // don't need interface to call setAlerted function
     function setHeroAlerted(address heroAddress, bool _alerted) external {
         bytes4 signature = bytes4(keccak256("setAlerted(bool)"));  // first 4 bytes of keccak256 hash is the function signature
         (bool success, ) = heroAddress.call(abi.encodeWithSelector(signature, _alerted));  // Call the setAlerted function of the Hero contract
