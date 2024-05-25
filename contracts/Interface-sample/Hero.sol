@@ -7,4 +7,8 @@ contract Hero {
     function alert() external {
         alerted = true;
     }
+
+    function setAlerted(bool _alerted) external {
+        alerted = _alerted;
+    }
 }
