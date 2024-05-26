@@ -8,6 +8,10 @@ contract Contract {
         members[addr] = true;  // set this address to true
     }
 
+    function removeMember(address addr) external {
+        members[addr] = false;
+    }
+
     function isMember(address addr) external view returns(bool) {
         return members[addr];
     }
