@@ -23,6 +23,13 @@ async function totalDaiTransferred(fromBlock, toBlock) {
     console.log(logs);
 
     // <-- TODO #2: return the total dai transferred during this timeframe
+    // Sum the values transferred, parsed from the 'data' field of the log entries
+    const totalTransferred = logs.reduce((acc, log) => {
+        // Convert the hex encoded data to a number and add to accumulator
+        return acc + BigInt(log.data);
+    }, BigInt(0));
+
+    return totalTransferred.toString(); // Return as string to handle large numbers safely
 }
 
 totalDaiTransferred(20002707, "safe").then(() => process.exit(0))
